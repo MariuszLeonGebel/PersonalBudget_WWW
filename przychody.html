@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+
+		<meta charset="utf-8">
+		<title>Finanse osobiste</title>
+		<meta name="description" content="Zaplanuj swoje wydatki. Rejestruj przychody i rozchody. Zobacz czy czasami nie bankrutujesz">
+		<meta name="keywords" content="pieniądze, budżet, planowanie">
+		<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+			
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="transaction.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<h1 class="logo">Finanse osobiste</h1>
+			<nav id="topnav">
+				<ul class="menu">
+					<li><a href="index.html">Strona główna</a></li>
+					<li><a href="przychody.html">Dodaj przychód</a></li>
+					<li><a href="wydatki.html">Dodaj wydatek</a></li>
+					<li><a href="bilans.html">Przeglądaj bilans</a></li>
+					<li><a href="#">Ustawienia</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div id="left">
+				<div id="content">
+						<div class="row" id="kwota">
+							<label> Kwota przychodu <input type="number" name="textKwota" step="any" min="0.01"></label>
+						</div>
+
+						<div class="row">
+							<label> Data przychodu <input id="today" type="date"></label>
+						</div>
+
+						<script>
+							let today = new Date().toISOString().substr(0, 10);
+							document.querySelector("#today").valueAsDate = new Date();
+						</script>
+						<div style="clear: both;"></div>
+
+						<div id="kategoria" class="row">
+							<fieldset>
+								<legend> Kategoria przychodu </legend>
+								<div><label><input type="radio" name="kategoria" checked value="1">Wynagrodzenie</label></div>
+								<div><label><input type="radio" name="kategoria" value="2"> Odsetki bankowe</label></div>
+								<div><label><input type="radio" name="kategoria" value="3"> Sprzedaż na Allegro/OLX</label></div>
+								<div><label><input type="radio" name="kategoria" value="4"> Inne</label></div>
+							</fieldset>
+						</div>
+
+					<div class="row" id="komentarzLabel">
+						<div><label for="komentarz"> Komentarz (opcjonalnie)</label></div>
+						<textarea name="komentarz" id="komentarz" rows="4" cols="80" maxlength="150"></textarea>
+					</div>
+					<div style="clear: both;"></div>			
+
+					<a href="#"><input type="button" value="Dodaj przychód"></a>
+				</div>
+			</div>
+
+			<div id="right">
+				<div id="tytul">Przychód</div>
+			</div>
+			<div style="clear: both;"></div>
+		</main>
+
+		<footer>
+			<div class="info">
+				2021; Życzę powodzenia w prowadzeniu osobistych spraw finansowych!
+			</div>
+		</footer>
+	</body>
+</html>

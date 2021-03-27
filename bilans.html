@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+
+		<meta charset="utf-8">
+		<title>Finanse osobiste</title>
+		<meta name="description" content="Zaplanuj swoje wydatki. Rejestruj przychody i rozchody. Zobacz czy czasami nie bankrutujesz">
+		<meta name="keywords" content="pieniądze, budżet, planowanie">
+		<meta http-equiv="X-Ua-Compatible" content="IE=edge">	
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="transaction.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+		
+	</head>
+	<body>
+
+		<header>
+			<h1 class="logo">Finanse osobiste</h1>
+			<nav id="topnav">
+				<ul class="menu">
+					<li><a href="index.html">Strona główna</a></li>
+					<li><a href="przychody.html">Dodaj przychód</a></li>
+					<li><a href="wydatki.html">Dodaj wydatek</a></li>
+					<li><a href="bilans.html">Przeglądaj bilans</a></li>
+					<li><a href="#">Ustawienia</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div id="left">
+				<div id="content">
+
+						<div class="row1">
+							<div id="label"><label for="rodzajB"> Okres </label></div>
+							<select id="rodzajB">
+								<option selected value="1">Bieżący miesiąc</option>
+								<option value="2">Poprzedni miesiąc</option>
+								<option value="3">Bieżący rok</option>
+								<option value="4">Niestandardowy okres</option>
+							</select>
+						</div>
+
+						<div class="row1">
+							<label> Data początkowa <input id="dateB" type="date"></label>	
+						</div>
+						<div class="row1">
+							<label> Data końcowa <input id="dateE" type="date"></label>	
+						</div>
+
+						<script type="text/javascript">
+							let today = new Date().toISOString().substr(0, 10);
+							document.querySelector("#dateB").valueAsDate = new Date();
+							document.querySelector("#dateE").valueAsDate = new Date();
+						</script>
+						
+					<a href="#"><input type="button"value="Pobierz bilans" style="float: right; margin-right: 50px;"></a>
+				</div>			
+			</div>
+
+			<div id="right">
+				<div id="tytul">Bilans</div>
+			</div>
+			<div style="clear: both;"></div>
+		</main>
+
+		<footer>
+			<div class="info">
+				2021; Życzę powodzenia w prowadzeniu osobistych spraw finansowych!
+			</div>
+		</footer>
+	</body>
+</html>

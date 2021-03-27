@@ -1,0 +1,234 @@
+body
+{
+	margin: 0;
+	background-image: url("img/pexels-michael-steinberg-321464.jpg");	
+	color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+
+h1.logo
+{
+	font-size: 44px;
+	font-weight: 700;
+	color: #ddd;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+#topnav
+{
+	background-color: #1c74b2;
+	background-color: #ebbd34; 
+	background-color: #307a3a;
+	text-align: center;
+}
+
+.menu
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	font-size: 18px;
+	min-height: 38px;
+	line-height: 200%;
+}
+
+.menu > li
+{
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 1px dashed #0a2b42;
+}
+
+.menu > li:first-child
+{
+	border-left: 1px dashed #0a2b42;
+}
+
+.menu a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu a:hover
+{
+	color: #0a2b42;
+}
+
+h1
+{
+	font-size: 44px;
+	font-weight: 400;
+	color: #39a5f1;
+	margin-bottom: 20px;
+}
+
+main
+{
+	background-image: url("img/pexels-michael-steinberg-321464.jpg");
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	width: 1000px;
+	min-height: 650px;
+	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	border-radius: 20px;
+}
+
+#left
+{
+	float: left;	
+}
+
+#right
+{
+	float: left;
+}
+
+#content
+{	
+	width: 500px;	
+}
+
+#tytul
+{
+	padding-top: 40px;
+	padding-left: 50px;
+	font-size: 80px;
+	color: yellow;
+	font-style: italic;
+}
+
+.row
+{
+	padding-left: 80px;	
+}
+
+.row1
+{
+	padding-right: 50px;
+	margin-top: 5px;
+	float: right;
+}
+
+input[type=number],
+input[type=date],
+select
+{
+	width: 200px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+	margin-left: 10px;
+	border-radius: 10px;
+	text-align: right;
+}
+
+#label
+{
+	margin-top: 24px;
+	float: left;
+}
+
+input[type=number]
+{
+	width: 188px;
+	margin-top: 35px;
+}
+
+input[type="radio"]
+{
+	margin: 10px;
+}
+
+input[type=button]
+{
+	width: 330px;
+	height: 60px;
+	background-color: #36b03c;
+	font-size: 20px;
+	color: white;	
+	border: none;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+	margin-left: 80px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+#rodzaj
+{
+	margin-top: 2px;
+	margin-left: 0;
+	width: 330px;
+}
+
+#rodzajB
+{
+	width: 250px;
+	float: right;
+}
+.info
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 20px;
+}
+
+#komentarzLabel
+{
+	margin-top: 30px;
+}
+
+#rodzajLabel
+{	
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+#kategoria
+{
+	padding-top: 30px;
+	width: 330px;
+}
+
+#kategoria1
+{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 330px;
+}
+
+fieldset
+{
+	border-radius: 10px;
+}
+
+#komentarz
+{	
+	resize: none;
+	border-radius: 10px;
+}
+
+textarea
+{
+	width: 320px;
+}
+
